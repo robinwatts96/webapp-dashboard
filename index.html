@@ -2,31 +2,42 @@
 <html lang="en">
     <head>
         
-        <title>Interactive Photo Gallery</title>
+        <title>Web App Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
-    <header>
-       <div class="nav-bar">
-         <p id="yourapp"><strong>Your</strong>App&trade;</p>
-         <img id="notification-bell" src="icons/icon-bell.svg" alt="notification bell">
-         <div id="nav-bar-break"></div>
-         <img id="profile-img" src="images/member-2.jpg" alt="profile picture image">
-         <p id="name">Jim Hopper</p>
-       </div>
-    </header>
-
     <body>
-       <div class="side-bar">
-         <img id="dashboard-icon" src="icons/icon-dashboard.svg" alt="Dashboard icon">
-         <img src="icons/icon-members.svg" alt="Members icon">
-         <img src="icons/icon-visits.svg" alt="Visitors icon">
-         <img src="icons/icon-settings.svg" alt="Settings icon">
-       </div>
-       
-       
+
+      <div class="grid-container">
+     
         
+        <div class="nav-bar">
+          <p id="yourapp"><strong>Your</strong>App&trade;</p>
+          <img id="notification-bell" src="icons/icon-bell.svg" alt="notification bell">
+          <div id="nav-bar-break"></div>
+          <img id="profile-img" src="images/member-2.jpg" alt="profile picture image">
+          <p id="name">Jim Hopper</p>
+        </div>
+        
+
+        <div class="side-bar">
+          <img id="dashboard-icon" src="icons/icon-dashboard.svg" alt="Dashboard icon">
+          <img src="icons/icon-members.svg" alt="Members icon">
+          <img src="icons/icon-visits.svg" alt="Visitors icon">
+          <img src="icons/icon-settings.svg" alt="Settings icon">
+        </div>
+
+        <main>
+          <div id="dashboard">
+            <h1 id="dashboard-header">Dashboard</h1>
+            <div id="dashboard-search">
+              <input class="search" type="search" placeholder="Search">
+            </div>
+          </div>  
+
+        </main>
+      </div>  
     </body>
 </html>

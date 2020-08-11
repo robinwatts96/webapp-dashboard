@@ -1,0 +1,37 @@
+// Container
+.grid-container {
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:100vh;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "top-nav"
+        "side-nav"
+        "main";
+}
+
+main {
+    grid-area: main;
+    display: grid;
+}
+
+// Dashboard
+#dashboard {
+    width: ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#dashboard-header {
+
+}
+
+#dashboard-search {
+    width: 10%;
+
+}
+
+
+
