@@ -1,37 +1,54 @@
 // Container
 .grid-container {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns:100vh;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "top-nav"
-        "side-nav"
-        "main";
+    grid-template-columns:100vw;
 }
 
+// Body
+body {
+    width: 100vw;
+}
+
+// Main
 main {
-    grid-area: main;
-    display: grid;
+    width: 100vw;
 }
 
 // Dashboard
-#dashboard {
-    width: ;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#dashboard-header {
-
+.search {
+    width: 45%;
 }
 
 #dashboard-search {
-    width: 10%;
-
+  display: flex;
+  justify-content: center;
 }
+
+// hr
+hr {
+    background-color: $secondary-color;
+    width: 80%;
+    height: .5px;
+    margin-top: 1em;
+}
+
+// Traffic
+#traffic-time li {
+    list-style-type: none;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+
+#traffic-time {
+    text-align: center;
+    padding: 0;
+}
+
 
 
 
