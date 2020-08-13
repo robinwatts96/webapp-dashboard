@@ -180,7 +180,7 @@ hr {
     @media (min-width: 768px){
     
         .grid-container {
-            grid-template-columns:55px 1fr;
+            grid-template-columns:1fr 1fr;
             grid-template-areas: 
                 "header header"
                 "navigation main";
@@ -210,6 +210,10 @@ hr {
         /* ---------------MAIN--------------------- */
         main {   
             grid-template-columns: 50%;
+        }
+
+        hr {
+            display: none;
         }
         
         #dashboard,
@@ -243,6 +247,7 @@ hr {
         border: 1px solid rgb(204, 199, 179);
         border-radius: 5px;
         max-width: 50%;
+        margin: 0 auto;
     }
     
     .alert {
@@ -262,8 +267,9 @@ hr {
     
     .widget-container-full{
        width: 90vw;
+       margin: 0 auto;
        }
-        .widget-container-half{
+    .widget-container-half{
             width:45vw;
         }
     
