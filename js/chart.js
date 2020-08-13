@@ -1,7 +1,7 @@
 // Line chart
 let trafficChart = document.getElementById('traffic-chart');
-let trafficTime = document.getElementById('traffic-time');
-let trafficTimeLinks = document.getElementById('li');
+let trafficTime = document.getElementById('traffic-nav');
+let trafficTimeLinks = trafficTime.querySelectorAll('li');
 
 // labels
 let hourlyLabel = ['01-03','04-05','06-08','09-11','12-13','14-16','17-18','19-20','21-22','23-24'];
@@ -29,8 +29,8 @@ let trafficData = {
   //remove active class
 
 // let remove = () =>{
-//     for(let i = 0; i < trafficNavLinks.length; i++){
-//         trafficNavLinks[i].classList.remove('active');
+//     for(let i = 0; i < trafficTimeLinks.length; i++){
+//         trafficTimeLinks[i].classList.remove('active');
 //         }
 //     };
     // shorter version as above 
@@ -162,3 +162,6 @@ let mobileChart = new Chart(mobileCanvas, {
   data: mobileData,
   options: mobileOptions
 });
+
+//line-grath:traffic-chart
+Chart.defaults.global.animation.duration = 3000;

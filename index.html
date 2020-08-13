@@ -37,39 +37,40 @@
             </div>
           </div> 
           
-          <div id="alert">
-            <!-- JS alert -->
-          </div>
+          <div class="alert" id="alert">
+            <!-- JS will insert alert here -->
+        </div>
 
           <hr>
 
           <!-- Graphs -->
           <!-- Traffic -->
-          <div class="traffic" id="graph">
-            <h2 id="traffic-header">TRAFFIC</h2>
-              <ul id="traffic-time">
-                <li id="li">Hourly</li>
-                <li id="li">Daily</li>
-                <li id="li">Weekly</li>
-                <li id="li">Monthly</li>            
-              </ul> 
-          </div>       
-          
+          <section class="traffic" id="graph">
+             <div>
+                <h2 id="traffic-header">TRAFFIC</h2>
+                <ul id="traffic-nav">
+                  <li id="li">Hourly</li>
+                  <li id="li">Daily</li>
+                  <li id="li" class="active">Weekly</li>
+                  <li id="li">Monthly</li>            
+                </ul> 
+              </div>          
             <canvas id="traffic-chart" width="80vw" height="20vh"></canvas>
 
+          </section>
           <!-- Daily -->
-          <div class="daily" id="graph">
+          <section class="daily" id="graph">
             <h3>Daily Traffic</h3>
             <canvas id="daily-chart"></canvas>
             </div>
-          </div>
+          </section>
 
           <!-- Mobile -->
-          <div class="mobile">
+          <section class="mobile">
             <h3>Mobile Users</h3>
             <canvas id="mobile-users-chart"></canvas>
             </div>
-          </div>
+          </section>
         
 
       
