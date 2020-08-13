@@ -42,6 +42,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     z-index: 999;
+    grid-area: navigation;
 }
