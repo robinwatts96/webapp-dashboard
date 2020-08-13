@@ -307,4 +307,9 @@ hr {
         main{       
             grid-template-columns: 1fr;
         }
+  
+        .side-bar {
+            flex-direction: column;
+        }
+
     }
