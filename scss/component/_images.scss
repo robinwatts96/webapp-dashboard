@@ -6,13 +6,6 @@
   padding: 0 0 0 0.5em;
 }
 
-#notification-bell {
-  width: 1.5em;
-  height: 1.5em;
-  margin-top: .4em;
-  padding-right: .25em;
-}
-
 .side-bar img {
   width: 1.5em;
   height: 1.5em;
@@ -20,4 +13,95 @@
   opacity: .5;
 }
 
+.bell-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  position: relative;
+}
+.bell{
+  width: 2em;
+  padding: .5em;
+  transition: .8s ease-in-out; 
+  cursor: pointer; 
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-.8em, .6em);
+  background-color: $third-color;  
+}
 
+// /* bell JS 
+#notifications{
+  opacity: 0;
+}
+.ulList{
+  /* display: none; */
+  margin: 0;
+  list-style: none;
+  position: absolute;
+ left: -3rem;
+ top:2.5rem;
+ display: flex;
+ flex-direction: column; 
+ z-index: 2;
+ cursor: pointer;
+ text-align: center;
+}
+
+.ulList li{
+  width: 90%;
+  color:cornsilk ;
+  background-color:$third-color;
+  padding: .5rem 1.25rem;
+  margin: 3px;
+  font-size: .8rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.ulList li:hover{
+  transform: scale(1.2);
+}
+.ulList li span{
+  display: block;
+  margin-top: 3px; 
+}
+
+// Social
+.social-image {
+  width: 40px;
+  height: 40px;
+  background: rgb(133, 136, 216);
+  padding: 12px;
+  margin-right: 20px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.social-text h4{
+  color:rgb(89, 93, 211);
+  font-size: 2rem;
+  font-weight: 800;
+}
+.social-text p{
+  font-size: 1.5rem;
+}
+.social-title{
+  margin-left: 10px;
+}
+
+// Members
+.members,
+.activity,
+.message,
+.setting{
+    border: 1px solid lightgray;
+}
+
+.profile-image{
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  padding: 8px;
+}

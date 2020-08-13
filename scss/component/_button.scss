@@ -1,0 +1,42 @@
+.alert-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;   
+    width: 90%;
+    padding: .5em;  
+}
+
+.alert {
+    width: 60%;
+    margin: 1em auto;
+}
+
+.button-primary{
+    border-radius: 5px;
+    padding: 1.2rem;
+    background-color:rgb(91, 90, 133);
+    box-shadow: -5px -5px 10px;
+    color: white;
+}
+.error{
+    background-color: crimson;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn {
+    width: 45%;
+    display: inline-block;
+    box-shadow: -5px -5px 10px;
+  }
+  
+  .btn + .btn {
+    margin-left: 5px;
+  }
+
+  .button-disabled {
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
