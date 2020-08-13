@@ -180,7 +180,7 @@ hr {
     @media (min-width: 768px){
     
         .grid-container {
-            grid-template-columns:1fr 1fr;
+            grid-template-columns:55px 1fr;
             grid-template-areas: 
                 "header header"
                 "navigation main";
@@ -195,21 +195,26 @@ hr {
     /* --------------------------navigation------------------ */
     .side-bar {
         flex-direction: column;
-        justify-content: flex-start;
+        max-width: 7.5vw;
     }
     
     /*sticky navigation*/
      .side-bar {
-        position: sticky;
+        position: fixed;
         left: 0;
         top:0;
         overflow: hidden;
+        } 
+        
+        .top-icon {
+            margin-top: -325vh;
         } 
     
            
         /* ---------------MAIN--------------------- */
         main {   
             grid-template-columns: 50%;
+            padding-left: 10px;
         }
 
         hr {
@@ -228,10 +233,16 @@ hr {
         }
         .mobile,
         .activity,
-        .settings{
+        .setting{
             grid-column: 2 / span 1;
         }
       
+        .mobile,
+        .setting,
+        .activity {
+            margin-right: 10px;
+        }
+
     /*main-header*/
     #dashboard{
         flex-direction: row;
@@ -306,10 +317,40 @@ hr {
         
         main{       
             grid-template-columns: 1fr;
+
+        }
+
+        #daily-chart {
+            margin-left: 10px;
         }
   
         .side-bar {
-            margin-top: 1000px
+            flex-direction: column;
+            max-width: 7.5vw;
         }
+        
+        /*sticky navigation*/
+         .side-bar {
+            position: fixed;
+            left: 0;
+            top:0;
+            overflow: hidden;
+            } 
+            
+            .top-icon {
+                margin-top: -260vh;
+            } 
 
+            #dashboard-header {
+                display: inline;
+                float: left;
+                margin-top: 11vh;
+            }
+
+            .search {
+                display: inline;
+                margin-top: 11vh;
+                margin-right: 5vw;
+                height: 3em;
+            }
     }

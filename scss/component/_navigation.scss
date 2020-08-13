@@ -33,16 +33,15 @@
 }
 
 // Side nav bar
-.side-bar {
-    width: 100%;
-    height: 10vh;
-    margin-top: 13vh;
+.side-bar { 
     background-color: $secondary-color;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+	justify-content: center;
+	align-content: center;
     position: sticky;
-    z-index: 999;
-    grid-area: navigation;
-}
+    top: 4em;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 1;
+    } 
+
