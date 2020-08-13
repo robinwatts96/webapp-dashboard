@@ -1,7 +1,7 @@
 // Container
 .grid-container {
-    width:95%;
-    margin: 3% 2%;
+    width:100%;
+
     display: grid;
     height: 100%;
     grid-template-columns:100%;
@@ -20,6 +20,14 @@ header{
 // Body
 body {
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
 }
 
 // Main
@@ -55,6 +63,7 @@ hr {
     text-align: center;
     margin: 0 auto;
     padding: 0 .5em;
+    z-index: 10;
 }
 
 #traffic-nav {
@@ -115,7 +124,6 @@ hr {
     margin: 10px;
     padding: 10px;
     border: 1px solid rgba(91, 90, 133,0.4);
-    box-shadow: -5px -5px 10px;
 }
 
 // Members
@@ -289,13 +297,8 @@ hr {
         .dot{  
             transform: translate(-1.9rem, .8rem);
         }
-        /* navigation */
-    
         
-        
-            /* ---------------MAIN--------------------- */
-        main{
-           
+        main{       
             grid-template-columns: 1fr;
         }
     }

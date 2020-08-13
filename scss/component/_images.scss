@@ -24,7 +24,14 @@
   padding: .5em;
   transition: .8s ease-in-out; 
   cursor: pointer; 
+  transition: transform 2s ease-in-out;
+  
 }
+
+.bell:hover {
+  transform: rotate(360deg);
+}
+
 .dot{
   width: 10px;
   height: 10px;

@@ -3,7 +3,7 @@ const alertBanner = document.getElementById("alert");
 
 // // HTML
 alertBanner.innerHTML = `<div class="alert-banner">
-                         <p><strong>Alert:</strong>This is an alert, please be alerted by the alertness of this alert!</p>
+                         <p><strong>Alert:</strong>This is an alert!!</p>
                         <p class="alert-banner-close">X</p>
                        </div>`
   let pointer = document.querySelector('.alert-banner-close')
