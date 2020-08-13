@@ -44,15 +44,32 @@
           <hr>
 
           <!-- Graphs -->
-          <h2 id="traffic-header">TRAFFIC</h2>
-            <ul id="traffic-time">
-              <li>Hourly</li>
-              <li>Daily</li>
-              <li>Weekly</li>
-              <li>Monthly</li>            
-            </ul>    
+          <!-- Traffic -->
+          <div class="traffic" id="graph">
+            <h2 id="traffic-header">TRAFFIC</h2>
+              <ul id="traffic-time">
+                <li id="li">Hourly</li>
+                <li id="li">Daily</li>
+                <li id="li">Weekly</li>
+                <li id="li">Monthly</li>            
+              </ul> 
+          </div>       
           
             <canvas id="traffic-chart" width="80vw" height="20vh"></canvas>
+
+          <!-- Daily -->
+          <div class="daily" id="graph">
+            <h3>Daily Traffic</h3>
+            <canvas id="daily-chart"></canvas>
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <div class="mobile">
+            <h3>Mobile Users</h3>
+            <canvas id="mobile-users-chart"></canvas>
+            </div>
+          </div>
         
 
       
